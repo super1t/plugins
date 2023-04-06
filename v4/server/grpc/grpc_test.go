@@ -8,7 +8,6 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/status"
 
-	"go-micro.dev/v4"
 	"go-micro.dev/v4/broker"
 	"go-micro.dev/v4/client"
 	"go-micro.dev/v4/errors"
@@ -17,9 +16,9 @@ import (
 	"go-micro.dev/v4/transport"
 
 	gcli "github.com/go-micro/plugins/v4/client/grpc"
-	gsrv "github.com/go-micro/plugins/v4/server/grpc"
-	pb "github.com/go-micro/plugins/v4/server/grpc/proto"
 	tgrpc "github.com/go-micro/plugins/v4/transport/grpc"
+	gsrv "github.com/super1t/plugins/v4/server/grpc"
+	pb "github.com/super1t/plugins/v4/server/grpc/proto"
 )
 
 // server is used to implement helloworld.GreeterServer.

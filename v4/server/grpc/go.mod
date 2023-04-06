@@ -1,4 +1,4 @@
-module github.com/go-micro/plugins/v4/server/grpc
+module github.com/super1t/plugins/v4/server/grpc
 
 go 1.17
 
@@ -52,9 +52,4 @@ require (
 	google.golang.org/protobuf v1.27.1 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
-)
-
-replace (
-	github.com/go-micro/plugins/v4/client/grpc => ../../client/grpc
-	github.com/go-micro/plugins/v4/transport/grpc => ../../transport/grpc
 )
