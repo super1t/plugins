@@ -983,11 +983,11 @@ func (g *grpcServer) Start() error {
 			close(exit)
 		}()
 
-		select {
-		case <-exit:
-		case <-time.After(time.Second):
-			g.srv.Stop()
-		}
+		//select {
+		//case <-exit:
+		//case <-time.After(time.Second):
+		//	g.srv.Stop()
+		//}
 
 		log.Logf(logger.InfoLevel, "Broker [%s] Disconnected from %s", config.Broker.String(), config.Broker.Address())
 		// disconnect broker
